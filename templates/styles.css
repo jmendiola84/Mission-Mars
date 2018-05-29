@@ -1,0 +1,151 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background: #000000;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Georgia", Times, serif;
+  color : #ffffff;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Georgia", Times, serif;
+  color : #ffffff;
+}
+
+a:hover {
+	color: #242342;
+}
+
+table {
+    font-family: "Georgia", Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #BC2A3A;
+    color: white;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-header a {
+	background-color : #00c5cd;
+	font-family: "Georgia", Times, serif;
+	font-size: 40 px;
+	color: white;
+}
+
+.navbar-header a:hover {
+	color: #242342;
+}
+
+#home-link {
+	font-family: "Georgia", Times, serif;
+	font-size: 40 px;
+	color: white;
+}
+
+#home-link:hover {
+	background-color: white;
+	font-family: "Georgia", Times, serif;
+	font-size: 40 px;
+	color: teal;
+}
+
+#description {
+	padding: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color:white;
+}
+
+#plots {
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color:white;
+	white-space: normal;
+}
+
+.thumbnail a img {
+	padding: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+	column-gap: 1px; 
+}
+
+#page-content {
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+.navbar-header {
+    background: #00c5cd;
+	color:  #00c5cd;
+	background-color: #00c5cd;
+
+  }
+
+.navbar-brand {
+	font-size: 70px;	
+}
+  
+body {
+	background-color:white;
+}
+
+#description {
+	padding: 20px;
+	margin-right: 20px;
+	margin-left: 0px;
+	background-color:white;
+}
+
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
+}
