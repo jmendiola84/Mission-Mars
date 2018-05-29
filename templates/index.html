@@ -89,9 +89,20 @@
                             <h3 style="text-align: center">Mars Hemispheres</h3>
                             <hr>
                         </div>
+							<div class="row">
+                           
+						   
+								{% for image in mars_info.hemisphere_images%}
 
+                               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                   <a href="{{image.img_url}}" class="thumbnail">
+                                       <img src="{{image.img_url}}" alt="">
+                                       <h4 style="text-align: center">{{image.title}}</h4>
+                                   </a>
+                               </div>
+								{% endfor %}
 						
-						
+							</div>
 						
                     </div>
                 </div>
