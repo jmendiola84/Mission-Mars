@@ -7,6 +7,8 @@ import pprint
 import requests
 import time
 from selenium import webdriver 
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 
 def init_browser():
     # @NOTE: Replace the path with your actual path to the chromedriver
@@ -29,24 +31,33 @@ def scrape_data():
 
 	#Get the most recent news in the page
 	news_title = soup.find(class_="content_title").text
+	time.sleep(5)
 	news_content = soup.find(class_="article_teaser_body").text
 	
 	
 	
 	jpl_url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
 	browser.visit(jpl_url)
-	
-	browser.click_link_by_partial_text("FULL IMAGE")
-	time.sleep(10)
-	browser.click_link_by_partial_text("more info")
-	time.sleep(10)
-	browser.find_by_tag('figure').click()
-	
+	time.sleep(5)
 	html = browser.html
 	soup = BeautifulSoup(html, "html.parser")
 	
+	time.sleep(3)
+	browser.click_link_by_partial_text("FULL IMAGE")
+	time.sleep(10)
+	actions = ActionChains(browser.driver)
+	time.sleep(5)
+	actions.send_keys(Keys.ARROW_RIGHT)
+	actions.perform()
+	time.sleep(5)
+	browser.click_link_by_partial_text("more info")
+	time.sleep(3)
+	browser.click_link_by_partial_href("spaceimages/images/largesize")
+	time.sleep(3)
+	html = browser.html
+	soup = BeautifulSoup(html, "html.parser")
+
 	featured_image_url  = soup.img['src']
-	
 	
 	
 	weather_url = "https://twitter.com/marswxreport?lang=en"
@@ -124,7 +135,7 @@ def scrape_data():
 	for row in mars_hemispheres:
 		title = row.text
 		browser.click_link_by_partial_text(title)
-		time.sleep(10)
+		time.sleep(3)
 		
 		img_html = browser.html
 		soup_h = BeautifulSoup(img_html, 'html.parser')
