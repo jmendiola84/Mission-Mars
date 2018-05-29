@@ -28,8 +28,7 @@ body {
 h1 {
   font-size: 50px;
   font-family: "Georgia", Times, serif;
-  color: #FF0038; 
-  text-shadow: 2px 2px 8px #000000;
+  color: white; 
 }
 
 h2 {
@@ -38,19 +37,18 @@ h2 {
   color : #ffffff;
 }
 
+
 h3 {
   font-size: 20px;
   font-family: "Georgia", Times, serif;
-  color : #FF0038;
+  color : #ff0038;
 }
 
 p {
   color : #ffffff;
 }
 
-a:hover {
-	color: #242342;
-}
+
 
 table {
     font-family: "Georgia", Times, serif;
@@ -67,9 +65,37 @@ tr {background-color: #f2f2f2;}
 
 tr:hover {background-color: #ddd;}
 
-.panel-body {
-	background-color: rgba(20,20,20,0.8);
+.jumbotron {
+	text-align: center; 
+	background-image: url(https://www.ordnancesurvey.co.uk/shop/media/wysiwyg/productpages/shutterstock_266242625_banner.jpg); 
+	background-size:cover;
+	color: #ffffff;
 }
+
+#mars_red:hover {
+	color: #ff0038;
+	text-shadow: 2px 2px 8px #ffffff;
+
+}
+
+
+.panel-body {
+	background-color: rgba(255,255,255,0.2);
+	border: none;
+}
+
+
+.panel-body:hover {
+	background-color : rgba(100,0,22,0.4);
+}
+
+.panel {	background-color: transparent;}
+
+.panel-default {	background-color: transparent;}
+
+.row {	background-color: transparent;}
+
+.col-md-12 {	background-color: transparent;}
 
 
 .img-fluid {
