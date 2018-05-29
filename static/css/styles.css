@@ -22,13 +22,14 @@ html {
 
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-  background: #000000;
+  background-image: url(https://ak6.picdn.net/shutterstock/videos/8028916/thumb/7.jpg);
 }
 
 h1 {
   font-size: 50px;
   font-family: "Georgia", Times, serif;
-  color : #ffffff;
+  color: #FF0038; 
+  text-shadow: 2px 2px 8px #000000;
 }
 
 h2 {
@@ -40,7 +41,11 @@ h2 {
 h3 {
   font-size: 20px;
   font-family: "Georgia", Times, serif;
-  color : #BC2A3A;
+  color : #FF0038;
+}
+
+p {
+  color : #ffffff;
 }
 
 a:hover {
@@ -61,6 +66,10 @@ td, th {
 tr {background-color: #f2f2f2;}
 
 tr:hover {background-color: #ddd;}
+
+.panel-body {
+	background-color: rgba(20,20,20,0.8);
+}
 
 
 .img-fluid {

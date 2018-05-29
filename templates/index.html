@@ -14,7 +14,7 @@
 <body style = "background-color: black;">
     <div class="container">
         <div class="hero jumbotron" style="text-align: center; background-image: url(https://www.ordnancesurvey.co.uk/shop/media/wysiwyg/productpages/shutterstock_266242625_banner.jpg); background-size:cover; background-color: rgba(0,0,0,0.5); ">
-                <h1 style="color: white; border: black;"><b>Mission to Mars</b></h1>
+                <h1><b>Mission to Mars</b></h1>
                 <hr>
                 <p>
                     <a class="btn btn-danger btn-lg" href="/scrape">Scrape New Data</a>
@@ -24,7 +24,7 @@
         <div class="row" >
             <div class="col-md-12" >
             <div class="panel panel-default">
-                <div class="panel-body" style = "background-color: rgba(20,20,20,0.5);">
+                <div class="panel-body" >
                    <h2>Latest Mars News</h2>
                    <hr>
                    <h3>{{mars_info.news_title}}</h3>
@@ -39,7 +39,7 @@
             <div class="col-md-8">
                 
                 <div class="panel panel-default">
-                    <div class="panel-body" style = "background-color: rgba(20,20,20,0.5);">
+                    <div class="panel-body">
                        <h2>Featured Mars Image</h2>
                        <hr>
                        <img src="{{mars_info.featured_image_url}}" alt="Mars Featured Image" style="width: 100%">
@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default">
-                            <div class="panel-body" style = "background-color: rgba(20,20,20,0.5);">
+                            <div class="panel-body" >
                                <h2>Current Weather on Mars</h2>
                                <hr>
                                <p>{{mars_info.mars_weather}}</p>
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default">
-                            <div class="panel-body" style = "background-color: rgba(20,20,20,0.5);">
+                            <div class="panel-body" >
                                <h2>Mars Facts</h2>
                                <hr>
                                {{mars_info.mars_facts | safe}}
@@ -81,7 +81,7 @@
 
             <div class="col-md-12">
                 <div class="panel panel-default">
-                    <div class="panel-body" style = "background-color: rgba(20,20,20,0.5);">
+                    <div class="panel-body" >
                         <div class="row">
                             <h2 style="text-align: center">Mars Hemispheres</h2>
                             <hr>
