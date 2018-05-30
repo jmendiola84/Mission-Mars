@@ -38,9 +38,6 @@ def scrape_data():
 	#Image Scraping
 	jpl_url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
 	browser.visit(jpl_url)
-	time.sleep(5)
-	html = browser.html
-	soup = BeautifulSoup(html, "html.parser")
 	time.sleep(3)
 	browser.click_link_by_partial_text("FULL IMAGE")
 	time.sleep(7)
