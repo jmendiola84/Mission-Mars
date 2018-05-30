@@ -112,13 +112,6 @@ tr:hover {background-color: #ddd;}
 	background-color:white;
 }
 
-#plots {
-	padding: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-	background-color:white;
-	white-space: normal;
-}
 
 .thumbnail a img {
 	padding: 1px;
@@ -134,12 +127,6 @@ tr:hover {background-color: #ddd;}
 @media screen and (max-width: 480px) {
 
   
-#description {
-	padding: 20px;
-	margin-right: 20px;
-	margin-left: 0px;
-	background-color:white;
-}
 
 .img-fluid {
     max-width: 80%;
