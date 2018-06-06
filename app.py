@@ -9,7 +9,7 @@ app = Flask(__name__)
 #Function to connect to MongoDB
 def connectDB():
     # setup mongo connection
-    conn = "mongodb://localhost:27017"
+    conn = "mongodb://0.0.0.0:27017"
     client = pymongo.MongoClient(conn)
 
     # connect to mongo db and collection
@@ -39,8 +39,8 @@ def scrape():
     collection.update({"name": "Mars"}, {"$set": mars}, upsert = True)
 
     # Redirect back to home page
-    return redirect("http://localhost:5000/", code=302)
+    return redirect("http://0.0.0.0:5000/", code=302)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host=0.0.0.0)
